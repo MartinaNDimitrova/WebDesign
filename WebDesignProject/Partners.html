@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+   <!--css-->
+   <link rel="stylesheet" href="Partn.css">
+
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+          <a href="index.html"><img src="images/e3eecffd-d897-46a8-bdce-2b952148d866-1618920994668.png" width="150"></a> 
+            <div class="nav-links">
+                <ul>
+                    <li> <a href="file:///C:/Users/Lenovo/Desktop/WebDesignProject/index.html">HOME</a> </li>
+                    <li> <a href="file:///C:/Users/Lenovo/Desktop/WebDesignProject/ABOUTUS.html">ABOUT US</a> </li>
+                    <li> <a href="file:///C:/Users/Lenovo/Desktop/WebDesignProject/JOINUS.html">JOIN US</a> </li>
+                    <li> <a href="file:///C:/Users/Lenovo/Desktop/WebDesignProject/Partners.html">PARTNERS</a> </li>
+                    <li> <a href="file:///C:/Users/Lenovo/Desktop/WebDesignProject/Contact.html">CONTACT US</a> </li>
+                    <li> <a href="file:///C:/Users/Lenovo/Desktop/WebDesignProject/rev1.html">REVIEWS</a> </li>
+                    <li> <a href="file:///C:/Users/Lenovo/Desktop/WebDesignProject/Blogs.html">BLOG</a> </li>
+                </ul>
+            </div>
+        </nav>
+   
+<div class="container">
+
+   <h1 class="heading">Our Partners</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="image">
+            <img src="images/franprix.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Franprix</h3>
+            <p>Fresh products all the time!</p>
+            <a href="https://www.facebook.com/franprix/" class="btn">read more</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/Carrefour.png" alt="">
+         </div>
+         <div class="content">
+            <h3>Carrefour</h3>
+            <p>Our mission is to provide our customers with quality services, products and food accessible to all across all distribution channels.!</p>
+            <a href="https://www.carrefour.com/en" class="btn">read more</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/sushi.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Sushi Shop</h3>
+            <p>Sushi Shop has specialized in the creation of sushi and other Japanese specialties like Poke bowls, Sushi Tacos and Burritos!</p>
+            <a href="https://sushishop.com/" class="btn">read more</a>
+           <!--- <div class="icons">
+               <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+               <span> <i class="fas fa-user"></i> by admin </span>
+            </div>-->
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/Ikeamag.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Ikea</h3>
+            <p>Furniture, home accessories, design ideas and inspiration for big dreams and small budgets. A better everyday life begins at home!</p>
+            <a href="https://www.ikea.com/" class="btn">read more</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/dominos.png" alt="">
+         </div>
+         <div class="content">
+            <h3>Dominos</h3>
+            <p>As a company that deals in food products, Domino's Pizza Japan wants to support today's food producers - as well as tomorrow's!</p>
+            <a href="https://www.dominos.com/index.intl.html" class="btn">read more</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/McDoMag.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>McDonald's</h3>
+            <p>McDonald's values and core mission put the planet and communities we serve at the forefront of every decision from sustainability to educational programs!            </p>
+            <a href="https://www.mcdonaldsapps.com/en-GB" class="btn">read more</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/KFC-restaurant-in-food-court.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>KFC</h3>
+            <p>KFC, a subsidiary of Yum! Brands, Inc. (NYSE: YUM.), is a global chicken restaurant brand with a rich, decades-long history of success and innovation!</p>
+            <a href="https://global.kfc.com/" class="btn">read more</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/buzz.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Buzz</h3>
+            <p>Best sneakers and deal of all time. Order and check us!</p>
+            <a href="https://www.buzzsneakers.hr/" class="btn">read more</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/nikee.jpeg" alt="">
+         </div>
+         <div class="content">
+            <h3>Nike</h3>
+            <p>Just Do It!</p>
+            <a href="https://www.nike.com/bg/" class="btn">read more</a>
+         </div>
+      </div>
+
+   </div>
+
+   <div id="load-more"> load more </div>
+
+</div>
+
+<script>
+
+let loadMoreBtn = document.querySelector('#load-more');
+let currentItem = 3;
+
+loadMoreBtn.onclick = () =>{
+   let boxes = [...document.querySelectorAll('.container .box-container .box')];
+   for (var i = currentItem; i < currentItem + 3; i++){
+      boxes[i].style.display = 'inline-block';
+   }
+   currentItem += 3;
+
+   if(currentItem >= boxes.length){
+      loadMoreBtn.style.display = 'none';
+   }
+}
+
+</script>
+
+</body>
+</html>

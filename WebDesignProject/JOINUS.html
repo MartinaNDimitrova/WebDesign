@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN US</title>
+    
+
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(234, 235, 239, 0.7), rgba(4,9,30,0.7)), url(images/stuart1.png);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color:#fff;
+   text-decoration: none ;
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #37a1c8;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+   
+}
+
+.text-box {
+    width: 90%;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+    color:rgb(53, 109, 184);
+}
+.text-box h3{
+    font-size: 58px;
+    color:#83d5f4
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size:30px;
+    color: #fff;
+}
+
+.join{
+    background-color: rgba(4,9,30,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+form{
+    width: 90%;
+    max-width: 600px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;  
+  color: white;
+  background:transparent;
+  font-size: 15px;
+}
+
+button {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.transp h3{
+    color:#83d5f4
+}
+
+.transpp h4{
+    color:#37a1c8
+}
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s ;
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+margin: 30px 0 10px;
+}
+
+.popup button{
+    width:100%;
+    margin-top: 50px;
+    padding: 10 px 0;
+    background: #6fd649;
+    color: #fff;
+    border:0;
+    outline: none;
+    font-size: 18 px;
+    border-radius:4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+          <a href="index.html"><img src="images/e3eecffd-d897-46a8-bdce-2b952148d866-1618920994668.png" width="150"></a> 
+            <div class="nav-links">
+                <ul>
+                    <li> <a href="file:///C:/Users/Lenovo/Desktop/WebDesignProject/index.html">HOME</a> </li>
+                    <li> <a href="file:///C:/Users/Lenovo/Desktop/WebDesignProject/ABOUTUS.html">ABOUT US</a> </li>
+                    <li> <a href="file:///C:/Users/Lenovo/Desktop/WebDesignProject/JOINUS.html">JOIN US</a> </li>
+                    <li> <a href="file:///C:/Users/Lenovo/Desktop/WebDesignProject/Partners.html">PARTNERS</a> </li>
+                    <li> <a href="file:///C:/Users/Lenovo/Desktop/WebDesignProject/Contact.html">CONTACT US</a> </li>
+                    <li> <a href="file:///C:/Users/Lenovo/Desktop/WebDesignProject/rev1.html">REVIEWS</a> </li>
+                    <li> <a href="file:///C:/Users/Lenovo/Desktop/WebDesignProject/Blogs.html">BLOG</a> </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="text-box">
+            <h1>Ride with Stuart and discover your city. </h1>
+            <h3>Join a supportive community of independent riders and enjoy flexible hours & competitive earnings:</h3>
+         <p> <br>Stuart is Europe’s leading on-demand logistics platform which connects businesses to a fleet of geolocalised independent couriers. <br> Our platform allows businesses of any kind of industry to deliver their customers with never-seen-before speed & efficiency.</p>
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+    <section class="join">
+        <img src="images/8505-1619335422-11groceriesembark-on-a-ride-3countries-1.png" width="500" height="500" style="float:left">
+    <form onsubmit="sendEmail(); reset(); return false;">
+        <div class="transp">
+    <h3>First Name:  </h3>  <input type="name" id="name" placeholder="name" name="name" size="20" maxlength="10" placeholder="Enter your name" required> 
+   <h3> Last Name: </h3><input type="name" id="surname" placeholder="surname" name="surname" size="20" maxlength="10" placeholder="Enter your last name" required>
+    <br> <h3>E-mail:</h3> <input type="email" name="email" id="email" placeholder="email" size="30" maxlength="30" placeholder="Enter your email" required>
+    <br> <h3>Phone:</h3> <input type="phone" name="phone" id="phone" placeholder="phone" size="10" maxlength="10" placeholder="Enter your phone number" required>
+</div>
+
+    <div>
+        <br>
+        <select name="chooseone" id="chooseone" placeholder="chooseone">
+            <option value="Select a City: ">Select a City:</option>
+            <option value="Paris">Paris</option>
+            <option value="Marseille">Marseille</option>
+            <option value="Nice">Nice</option>
+            <option value="Lyon">Lyon</option>
+        </select>
+    </div>
+
+    <div class="transp transpp">
+        <br><h3>Select a transport type: </h3>
+        <input type="radio" id="transptype" placeholder="transptype" name="choice" value="Car"><h4>Car</h4>
+        <input type="radio" name="choice" id="transptype" placeholder="transptype" value="Bicycle"><h4>Bicycle</h4>
+        <input type="radio" name="choice" id="transptype" placeholder="transptype" value="Moped/Mothorbike"><h4>Moped/mothorbike</h4>
+        <input type="radio" name="choice" id="transptype" placeholder="transptype" value="Truck"><h4>Truck</h4>
+    </div>
+
+    <div class="transp transpp">
+        <br> <h3> Categories (Optional): </h3> 
+        <input type="checkbox" id="categories" placeholder="categories" name="choice" value="A"><h4>A</h4> 
+        <input type="checkbox" name="choice" id="categories" placeholder="categories"  value="B"><h4>B</h4> 
+        <input type="checkbox" name="choice" id="categories" placeholder="categories" value="C"><h4>C</h4> 
+        <input type="checkbox" name="choice" id="categories" placeholder="categories" value="D"><h4>D</h4> 
+    </div>
+
+    <div class="transp">
+        <br>
+       <h3> Comment:</h3> <textarea name="Comment" cols="50" rows="10"></textarea>
+    </div>
+    <div>
+        <br> <button type="submit" id="btn" class="btn" /*onclick="audio.play();"*/ onclick="openPopup()">Submit</button>
+<div class="popup" id="popup">
+    <img src="images/tickkk.png">
+    <h2>Thank You!</h2>
+    <p>Your details have been successfully submitted. Thanks!</p>
+    <button type="button" onclick="closePopup()">OK</button>
+</div>
+        </div>
+        <script>
+            let popup=document.getElementById("popup");
+
+            function openPopup() 
+            {
+                popup.classList.add("open-popup");
+            }
+
+            function closePopup() 
+            {
+                popup.classList.remove("open-popup");
+            }
+        </script>
+
+        <script type="text/javascript">
+            const audio=new Audio();
+            audio.src="./click.mp3";
+
+        </script>
+    </form>
+</section>
+
+
+
+
+</body>
+
+
+</html>
